@@ -1,0 +1,25 @@
+{
+  "name": "game-of-life",
+  "version": "0.1.0",
+  "description": "Conway's Game of Life",
+  "main": "index.js",
+  "scripts": {
+    "tdd": "mocha -b -R min -w ./tests/*.spec.js",
+    "test": "mocha -b ./tests/*.spec.js",
+    "pretest": "jshint ./src ./tests ./index.js && jscs ./src ./tests ./index.js"
+  },
+  "keywords": [
+    "conway",
+    "game-of-life",
+    "gdcr",
+    "gdcr2014"
+  ],
+  "author": "Ivan Krechetov <ikr@ikr.su>",
+  "license": "MIT",
+  "devDependencies": {
+    "jscs": "^1.7.3",
+    "jshint": "^2.5.10",
+    "mocha": "^2.0.1",
+    "sinon": "^1.11.1"
+  }
+}
